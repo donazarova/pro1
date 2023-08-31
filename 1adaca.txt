@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+   <style>
+      #boxes {
+        float: left;
+        width: 100%;
+      }      
+      .box {
+        width: 50px;
+        height: 50px;
+        float: left;
+	border: 1px solid;
+        border-color: black;
+      }
+      .round-edge {
+        border-radius: 15px;
+      }
+
+    </style>
+</head>
+<body>
+<div>
+
+      <div id="boxes">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+      </div>
+	  
+      <button style="margin-top:10px" id="button_add_box">Add a box</button>
+
+</div>
+</body>
+
+<script>
+
+<src>script.js</src>
+
+
+const box1 = document.getElementById('box1');
+
+box1.addEventListener('click', ChangeShape);
+
+function.ChangeShape(){
+  document.getElementById("box1").ChangeShape = "circle";
+}
+
+box1.addEventListener('mouseover', function handleMouseOver() {
+  box1.style.color = 'red';
+});
+
+box1.addEventListener('mouseout', function handleMouseOut() {
+  box1.style.color = 'black';
+});
+
+const box2 = document.getElementById('box2');
+
+box2.addEventListener('click', ChangeShape);
+
+function.ChangeShape(){
+  document.getElementById("box2").ChangeShape = "circle";
+}
+
+box2.addEventListener('mouseover', function handleMouseOver() {
+  box2.style.color = 'red';
+});
+
+box2.addEventListener('mouseout', function handleMouseOut() {
+  box2.style.color = 'black';
+});
+
+const box3 = document.getElementById('box3');
+
+box3.addEventListener('click', ChangeShape);
+
+function.ChangeShape(){
+  document.getElementById("box3").ChangeShape = "circle";
+}
+
+box3.addEventListener('mouseover', function handleMouseOver() {
+  box3.style.color = 'red';
+});
+
+box3.addEventListener('mouseout', function handleMouseOut() {
+  box3.style.color = 'black';
+});
+
+box1 = document.getElementById("box1")
+box2 = document.getElementById("box2")
+box3 = document.getElementById("box3")
+
+button = document.getElementById("button_add_box")
+
+button.addEventListener('click', addbox()){
+  // dodavanje kocka
+}
+
+
+</script>
+</html>
